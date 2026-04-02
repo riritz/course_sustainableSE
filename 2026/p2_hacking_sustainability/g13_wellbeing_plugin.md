@@ -3,7 +3,7 @@ author: "Konstantina Anastasiadou, Zofia Rogacka-Trojak, Amy van der Meijden, An
 title: "Flow-Sate: Developer Well-being Plugin "
 image: "img/g13_wellbeing_plugin/logo.png"
 summary: "We present _Flow-State_, a VS Code IDE plugin designed to enhance developer productivity and flow, reduce cognitive load, and promote well-being. Our design draws inspiration from the SPACE and DevEx frameworks. The plugin consists of various features for monitoring individual cognitive load, such as the add-to-delete ratio and large code insertions. It additionally helps developers sustain their focus and prevent burnout by including features such as a Pomodoro timer and real-time feedback alerts. It offloads reviewer cognitive load by analyzing Pull Request characteristics such as lines of code, cognitive complexity, and unused dependencies before code is committed."
-paper: "../papers/g13_template.pdf"
+paper: "../papers/g13_wellbeing_plugin.pdf"
 source: "https://github.com/ZofiaRT/flow-state"
 group_number: 13
 identifier: "p2_hacking_sustainability_2026" # Do not change this
