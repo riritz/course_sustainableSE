@@ -4,17 +4,9 @@ title: "Flow-Sate: Developer Well-being Plugin "
 image: "img/g13_wellbeing_plugin/logo.png"
 summary: "A local IDE plugin protecting developer well-being. It monitors Flow State to prompt breaks, and analyzes uncommitted code's Cognitive Load to prevent reviewer burnout from complex PRs."
 paper: "../papers/g13_template.pdf"
-source: "https://github.com/luiscruz/course_sustainableSE"
-website: https://luiscruz.github.io/course_sustainableSE/
-video: https://luiscruz.github.io/course_sustainableSE/
+source: "https://github.com/ZofiaRT/flow-state"
 group_number: 13
 identifier: "p2_hacking_sustainability_2026" # Do not change this
 all_projects_page: "../p2_hacking_sustainability" # Do not change this
 ---
-
-The *Developer Well-being Plugin* is a locally run IDE extension designed to support Individual and Social Sustainability right at the source of code creation. This plugin will be designed to protect developers from burnout while they write code. It focuses on the developer's "Flow State" a key part of the *SPACE framework*[^1] by tracking how much time they spend actively coding compared to how often they switch contexts or get distracted. If their focus drops, the plugin privately suggests taking a break. Because all data is processed and stored locally on the developer's machine, it supports Individual Sustainability without acting as a surveillance tool for management.
-
-Beyond helping the person writing the code, the plugin also protects the team members who have to review it (Social Sustainability). Large, complicated Pull Requests (PRs) cause reviewer fatigue and lead to poor code reviews. Instead of waiting for a PR to be opened on GitHub, our tool analyzes the developer's uncommitted code right inside the IDE. It calculates a running "Cognitive Load Score" based on cyclomatic complexity, the number of modified files, and subsystems touched in the current working tree. If the score gets too high, the plugin gently warns the developer to commit their work or split the feature into smaller parts, preventing burnout for future reviewers.
-
-# References
-[^1]: Developer experience, Microsoft Developer. (n.d.). Microsoft Developer. [Read Article](https://developer.microsoft.com/en-us/developer-experience#:~:text=The%20SPACE%20framework%20was%20developed,Partner%20Research%20Manager%20at%20Microsoft)
+  Software engineering is inherently cognitively demanding, frequently pushing developers towards burnout through silent mental fatigue, a burden that is ultimately transferred onto teammates through complex code reviews. Existing developer productivity tools typically focus either on static code analysis or on tracking developer activity. However, no unified IDE solution currently addresses both the developer’s individual cognitive load and the resulting burden placed on reviewers. In this paper, we present _Flow-State_, a VS Code IDE plugin designed to enhance developer productivity and flow, reduce cognitive load, and promote well-being. Our design draws inspiration from the SPACE and DevEx frameworks. The plugin consists of various features for monitoring individual cognitive load, such as the add-to-delete ratio and large code insertions. It additionally helps developers sustain their focus and prevent burnout by including features such as a Pomodoro timer and real-time feedback alerts. It offloads reviewer cognitive load by analyzing Pull Request characteristics such as lines of code, cognitive complexity, and unused dependencies before code is committed. We evaluate our proposed solution through Scenario-Based Design and Evaluation, by introducing realistic developer personas. Our results demonstrate that continuous background behavioral tracking can effectively diagnose and mitigate cognitive friction and, at the same time, tackle team-wide burnout.
